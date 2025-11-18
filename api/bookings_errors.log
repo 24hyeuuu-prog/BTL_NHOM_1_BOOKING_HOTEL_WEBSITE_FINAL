@@ -1,0 +1,246 @@
+[18-Nov-2025 06:33:47 Europe/Berlin] 
+=== BOOKING API REQUEST ===
+[18-Nov-2025 06:33:47 Europe/Berlin] Time: 2025-11-18 06:33:47
+[18-Nov-2025 06:33:47 Europe/Berlin] Method: POST
+[18-Nov-2025 06:33:47 Europe/Berlin] Session Status: 2
+[18-Nov-2025 06:33:47 Europe/Berlin] Session ID: 1v0a5g2kvak8js3am73jrk26v8
+[18-Nov-2025 06:33:47 Europe/Berlin] Session data: Array
+(
+    [user_id] => 7
+    [email] => dangvandan1206@gmail.com
+    [username] => dangvandan1206_qlPtG
+    [avatar] => https://lh3.googleusercontent.com/a/ACg8ocKF-UQ2SlIPuf3pLQHQ83XEFsgg3cmq8drCDVqmNRq3ds-wr1al=s96-c
+    [admin] => 0
+    [phone] => 
+)
+
+[18-Nov-2025 06:33:47 Europe/Berlin] User ID from session: 7
+[18-Nov-2025 06:33:47 Europe/Berlin] User authenticated: 7
+[18-Nov-2025 06:33:47 Europe/Berlin] Raw POST data: {"hotel_id":4,"room_id":10,"check_in_date":"2025-11-19","check_out_date":"2025-11-23","num_guests":3,"total_price":4400000,"notes":"Tôi muốn có nhân viên đón tiếp trước khi tới khách sạn. ","room_numbers":"D101","room_quantity":1}
+[18-Nov-2025 06:33:47 Europe/Berlin] Decoded data: Array
+(
+    [hotel_id] => 4
+    [room_id] => 10
+    [check_in_date] => 2025-11-19
+    [check_out_date] => 2025-11-23
+    [num_guests] => 3
+    [total_price] => 4400000
+    [notes] => Tôi muốn có nhân viên đón tiếp trước khi tới khách sạn. 
+    [room_numbers] => D101
+    [room_quantity] => 1
+)
+
+[18-Nov-2025 06:33:47 Europe/Berlin] Booking request data: Array
+(
+    [hotel_id] => 4
+    [room_id] => 10
+    [check_in_date] => 2025-11-19
+    [check_out_date] => 2025-11-23
+    [num_guests] => 3
+    [total_price] => 4400000
+    [notes] => Tôi muốn có nhân viên đón tiếp trước khi tới khách sạn. 
+    [room_numbers] => D101
+    [room_quantity] => 1
+)
+
+[18-Nov-2025 06:33:47 Europe/Berlin] Room numbers (tên phòng): D101
+[18-Nov-2025 06:33:47 Europe/Berlin] Room IDs (mã phòng): 
+[18-Nov-2025 06:33:47 Europe/Berlin] Room quantity: 1
+[18-Nov-2025 06:33:47 Europe/Berlin] All validations passed. Creating booking...
+[18-Nov-2025 06:33:47 Europe/Berlin] === BOOKING CREATE ===
+[18-Nov-2025 06:33:47 Europe/Berlin] User ID: 7
+[18-Nov-2025 06:33:47 Europe/Berlin] Hotel ID: 4
+[18-Nov-2025 06:33:47 Europe/Berlin] Room ID: 10
+[18-Nov-2025 06:33:47 Europe/Berlin] Data: Array
+(
+    [hotel_id] => 4
+    [room_id] => 10
+    [check_in_date] => 2025-11-19
+    [check_out_date] => 2025-11-23
+    [num_guests] => 3
+    [total_price] => 4400000
+    [notes] => Tôi muốn có nhân viên đón tiếp trước khi tới khách sạn. 
+    [room_numbers] => D101
+    [room_quantity] => 1
+)
+
+[18-Nov-2025 06:33:47 Europe/Berlin] Setting room_numbers: 'D101'
+[18-Nov-2025 06:33:47 Europe/Berlin] Setting room_quantity: 1
+[18-Nov-2025 06:33:47 Europe/Berlin] Creating booking: User=7, Hotel=4, Room=10, CheckIn=2025-11-19, CheckOut=2025-11-23, Guests=3, Price=4400000, RoomNumbers=D101, RoomQuantity=1
+[18-Nov-2025 06:33:47 Europe/Berlin] === BOOKING.create() ===
+[18-Nov-2025 06:33:47 Europe/Berlin] User ID: 7
+[18-Nov-2025 06:33:47 Europe/Berlin] Hotel ID: 4
+[18-Nov-2025 06:33:47 Europe/Berlin] Room ID: 10
+[18-Nov-2025 06:33:47 Europe/Berlin] Check-in: 2025-11-19
+[18-Nov-2025 06:33:47 Europe/Berlin] Check-out: 2025-11-23
+[18-Nov-2025 06:33:47 Europe/Berlin] Guests: 3
+[18-Nov-2025 06:33:47 Europe/Berlin] Price: 4400000
+[18-Nov-2025 06:33:47 Europe/Berlin] SQL: INSERT INTO bookings (user_id, hotel_id, room_id, room_numbers, room_quantity, check_in_date, check_out_date, num_guests, total_price, status, notes) 
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'Chưa xác nhận', ?)
+[18-Nov-2025 06:33:47 Europe/Berlin] Inserting values:
+[18-Nov-2025 06:33:47 Europe/Berlin]   - user_id: 7
+[18-Nov-2025 06:33:47 Europe/Berlin]   - hotel_id: 4
+[18-Nov-2025 06:33:47 Europe/Berlin]   - room_id: 10
+[18-Nov-2025 06:33:47 Europe/Berlin]   - room_numbers (tên phòng): D101
+[18-Nov-2025 06:33:47 Europe/Berlin]   - room_quantity: 1
+[18-Nov-2025 06:33:47 Europe/Berlin]   - check_in_date: 2025-11-19
+[18-Nov-2025 06:33:47 Europe/Berlin]   - check_out_date: 2025-11-23
+[18-Nov-2025 06:33:47 Europe/Berlin]   - num_guests: 3
+[18-Nov-2025 06:33:47 Europe/Berlin]   - total_price: 4400000
+[18-Nov-2025 06:33:47 Europe/Berlin] SUCCESS: Booking created with ID: 11
+[18-Nov-2025 06:33:47 Europe/Berlin] Booking result: Array
+(
+    [success] => 1
+    [message] => Đặt phòng thành công
+    [booking_id] => 11
+)
+
+[18-Nov-2025 06:33:47 Europe/Berlin] Booking response: Array
+(
+    [success] => 1
+    [message] => Đặt phòng thành công
+    [booking_id] => 11
+)
+
+[18-Nov-2025 06:33:47 Europe/Berlin] JSON response being sent: {"success":true,"message":"\u0110\u1eb7t ph\u00f2ng th\u00e0nh c\u00f4ng","booking_id":11}
+[18-Nov-2025 06:33:57 Europe/Berlin] 
+=== BOOKING API REQUEST ===
+[18-Nov-2025 06:33:57 Europe/Berlin] Time: 2025-11-18 06:33:57
+[18-Nov-2025 06:33:57 Europe/Berlin] Method: PUT
+[18-Nov-2025 06:33:57 Europe/Berlin] Session Status: 2
+[18-Nov-2025 06:33:57 Europe/Berlin] Session ID: 1v0a5g2kvak8js3am73jrk26v8
+[18-Nov-2025 06:33:57 Europe/Berlin] Session data: Array
+(
+    [user_id] => 7
+    [email] => dangvandan1206@gmail.com
+    [username] => dangvandan1206_qlPtG
+    [avatar] => https://lh3.googleusercontent.com/a/ACg8ocKF-UQ2SlIPuf3pLQHQ83XEFsgg3cmq8drCDVqmNRq3ds-wr1al=s96-c
+    [admin] => 0
+    [phone] => 
+)
+
+[18-Nov-2025 06:33:57 Europe/Berlin] User ID from session: 7
+[18-Nov-2025 06:33:57 Europe/Berlin] User authenticated: 7
+[18-Nov-2025 06:43:25 Europe/Berlin] 
+=== BOOKING API REQUEST ===
+[18-Nov-2025 06:43:25 Europe/Berlin] Time: 2025-11-18 06:43:25
+[18-Nov-2025 06:43:25 Europe/Berlin] Method: POST
+[18-Nov-2025 06:43:25 Europe/Berlin] Session Status: 2
+[18-Nov-2025 06:43:25 Europe/Berlin] Session ID: 1v0a5g2kvak8js3am73jrk26v8
+[18-Nov-2025 06:43:25 Europe/Berlin] Session data: Array
+(
+    [user_id] => 7
+    [email] => dangvandan1206@gmail.com
+    [username] => dangvandan1206_qlPtG
+    [avatar] => https://lh3.googleusercontent.com/a/ACg8ocKF-UQ2SlIPuf3pLQHQ83XEFsgg3cmq8drCDVqmNRq3ds-wr1al=s96-c
+    [admin] => 0
+    [phone] => 
+)
+
+[18-Nov-2025 06:43:25 Europe/Berlin] User ID from session: 7
+[18-Nov-2025 06:43:25 Europe/Berlin] User authenticated: 7
+[18-Nov-2025 06:43:25 Europe/Berlin] Raw POST data: {"hotel_id":1,"room_id":3,"check_in_date":"2025-11-19","check_out_date":"2025-11-27","num_guests":3,"total_price":16000000,"notes":"Tôi muốn có xe đưa đón","room_numbers":"A103,A102","room_quantity":2}
+[18-Nov-2025 06:43:25 Europe/Berlin] Decoded data: Array
+(
+    [hotel_id] => 1
+    [room_id] => 3
+    [check_in_date] => 2025-11-19
+    [check_out_date] => 2025-11-27
+    [num_guests] => 3
+    [total_price] => 16000000
+    [notes] => Tôi muốn có xe đưa đón
+    [room_numbers] => A103,A102
+    [room_quantity] => 2
+)
+
+[18-Nov-2025 06:43:25 Europe/Berlin] Booking request data: Array
+(
+    [hotel_id] => 1
+    [room_id] => 3
+    [check_in_date] => 2025-11-19
+    [check_out_date] => 2025-11-27
+    [num_guests] => 3
+    [total_price] => 16000000
+    [notes] => Tôi muốn có xe đưa đón
+    [room_numbers] => A103,A102
+    [room_quantity] => 2
+)
+
+[18-Nov-2025 06:43:25 Europe/Berlin] Room numbers (tên phòng): A103,A102
+[18-Nov-2025 06:43:25 Europe/Berlin] Room IDs (mã phòng): 
+[18-Nov-2025 06:43:25 Europe/Berlin] Room quantity: 2
+[18-Nov-2025 06:43:25 Europe/Berlin] All validations passed. Creating booking...
+[18-Nov-2025 06:43:25 Europe/Berlin] === BOOKING CREATE ===
+[18-Nov-2025 06:43:25 Europe/Berlin] User ID: 7
+[18-Nov-2025 06:43:25 Europe/Berlin] Hotel ID: 1
+[18-Nov-2025 06:43:25 Europe/Berlin] Room ID: 3
+[18-Nov-2025 06:43:25 Europe/Berlin] Data: Array
+(
+    [hotel_id] => 1
+    [room_id] => 3
+    [check_in_date] => 2025-11-19
+    [check_out_date] => 2025-11-27
+    [num_guests] => 3
+    [total_price] => 16000000
+    [notes] => Tôi muốn có xe đưa đón
+    [room_numbers] => A103,A102
+    [room_quantity] => 2
+)
+
+[18-Nov-2025 06:43:25 Europe/Berlin] Setting room_numbers: 'A103,A102'
+[18-Nov-2025 06:43:25 Europe/Berlin] Setting room_quantity: 2
+[18-Nov-2025 06:43:25 Europe/Berlin] Creating booking: User=7, Hotel=1, Room=3, CheckIn=2025-11-19, CheckOut=2025-11-27, Guests=3, Price=16000000, RoomNumbers=A103,A102, RoomQuantity=2
+[18-Nov-2025 06:43:25 Europe/Berlin] === BOOKING.create() ===
+[18-Nov-2025 06:43:25 Europe/Berlin] User ID: 7
+[18-Nov-2025 06:43:25 Europe/Berlin] Hotel ID: 1
+[18-Nov-2025 06:43:25 Europe/Berlin] Room ID: 3
+[18-Nov-2025 06:43:25 Europe/Berlin] Check-in: 2025-11-19
+[18-Nov-2025 06:43:25 Europe/Berlin] Check-out: 2025-11-27
+[18-Nov-2025 06:43:25 Europe/Berlin] Guests: 3
+[18-Nov-2025 06:43:25 Europe/Berlin] Price: 16000000
+[18-Nov-2025 06:43:25 Europe/Berlin] SQL: INSERT INTO bookings (user_id, hotel_id, room_id, room_numbers, room_quantity, check_in_date, check_out_date, num_guests, total_price, status, notes) 
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'Chưa xác nhận', ?)
+[18-Nov-2025 06:43:25 Europe/Berlin] Inserting values:
+[18-Nov-2025 06:43:25 Europe/Berlin]   - user_id: 7
+[18-Nov-2025 06:43:25 Europe/Berlin]   - hotel_id: 1
+[18-Nov-2025 06:43:25 Europe/Berlin]   - room_id: 3
+[18-Nov-2025 06:43:25 Europe/Berlin]   - room_numbers (tên phòng): A103,A102
+[18-Nov-2025 06:43:25 Europe/Berlin]   - room_quantity: 2
+[18-Nov-2025 06:43:25 Europe/Berlin]   - check_in_date: 2025-11-19
+[18-Nov-2025 06:43:25 Europe/Berlin]   - check_out_date: 2025-11-27
+[18-Nov-2025 06:43:25 Europe/Berlin]   - num_guests: 3
+[18-Nov-2025 06:43:25 Europe/Berlin]   - total_price: 16000000
+[18-Nov-2025 06:43:25 Europe/Berlin] SUCCESS: Booking created with ID: 12
+[18-Nov-2025 06:43:25 Europe/Berlin] Booking result: Array
+(
+    [success] => 1
+    [message] => Đặt phòng thành công
+    [booking_id] => 12
+)
+
+[18-Nov-2025 06:43:25 Europe/Berlin] Booking response: Array
+(
+    [success] => 1
+    [message] => Đặt phòng thành công
+    [booking_id] => 12
+)
+
+[18-Nov-2025 06:43:25 Europe/Berlin] JSON response being sent: {"success":true,"message":"\u0110\u1eb7t ph\u00f2ng th\u00e0nh c\u00f4ng","booking_id":12}
+[18-Nov-2025 06:43:37 Europe/Berlin] 
+=== BOOKING API REQUEST ===
+[18-Nov-2025 06:43:37 Europe/Berlin] Time: 2025-11-18 06:43:37
+[18-Nov-2025 06:43:37 Europe/Berlin] Method: PUT
+[18-Nov-2025 06:43:37 Europe/Berlin] Session Status: 2
+[18-Nov-2025 06:43:37 Europe/Berlin] Session ID: 1v0a5g2kvak8js3am73jrk26v8
+[18-Nov-2025 06:43:37 Europe/Berlin] Session data: Array
+(
+    [user_id] => 7
+    [email] => dangvandan1206@gmail.com
+    [username] => dangvandan1206_qlPtG
+    [avatar] => https://lh3.googleusercontent.com/a/ACg8ocKF-UQ2SlIPuf3pLQHQ83XEFsgg3cmq8drCDVqmNRq3ds-wr1al=s96-c
+    [admin] => 0
+    [phone] => 
+)
+
+[18-Nov-2025 06:43:37 Europe/Berlin] User ID from session: 7
+[18-Nov-2025 06:43:37 Europe/Berlin] User authenticated: 7

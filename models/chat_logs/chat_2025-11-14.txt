@@ -1,0 +1,14 @@
+[2025-11-14 22:24:56] IP: ::1
+User: đói\
+Bot: Chào bạn, nghe bạn nói "đói" là mình cũng thấy cồn cào rồi! Ẩm thực Việt Nam...
+---
+[2025-11-14 22:33:01] IP: ::1
+User: hế lô
+Bot: Chào bạn! Rất vui được gặp bạn. Tôi là trợ lý du lịch thông minh từ LaValle, ...
+---
+[2025-11-14 22:36:20] IP: ::1
+User: kaka
+Bot: Chào bạn kaka!
+
+Rất vui được đồng hành cùng bạn! Tôi là trợ lý du lịch thông...
+---

@@ -1,0 +1,48 @@
+[2025-11-14 21:28:18] IP: ::1
+User: helo
+Bot: Chào bạn! Rất vui được gặp bạn. 👋 Tôi là trợ lý du lịch thông minh của LaV...
+---
+[2025-11-14 21:38:33] IP: ::1
+User: xin chào
+Bot: Chào bạn! Rất vui được gặp bạn. Tôi là trợ lý du lịch thông minh của LaValle,...
+---
+[2025-11-14 21:48:06] IP: ::1
+User: lô
+Bot: Chào bạn! Tôi là trợ lý du lịch thông minh của LaValle, ứng dụng đặt phòng khá...
+---
+[2025-11-14 21:48:45] IP: ::1
+User: hế lô
+Bot: Chào bạn! LaValle rất vui được đón tiếp bạn.
+
+Tôi là trợ lý du lịch thông min...
+---
+[2025-11-14 21:48:54] IP: ::1
+User: 1+1 bằng mấy
+Bot: Chào bạn! 1 cộng 1 bằng 2 nhé.
+
+Tuy nhiên, tôi là trợ lý du lịch thông minh của L...
+---
+[2025-11-14 21:51:32] IP: ::1
+User: helo
+Bot: Chào bạn! Rất vui được gặp bạn.
+
+Tôi là trợ lý du lịch thông minh của LaValle...
+---
+[2025-11-14 22:04:28] IP: ::1
+User: chào cậu
+Bot: Chào bạn! Rất vui được gặp bạn!
+
+Tôi là trợ lý du lịch thông minh của LaValle...
+---
+[2025-11-14 22:20:12] IP: ::1
+User: tớ đói quá
+Bot: Chào bạn! Nghe bạn nói đói bụng, mình hy vọng bạn sẽ sớm tìm được món gì n...
+---
+[2025-11-14 22:20:37] IP: ::1
+User: hướng dẫn tớ đặt phòng
+Bot: Chào bạn, rất vui được hỗ trợ bạn đặt phòng qua LaValle! Quy trình đặt phòng...
+---
+[2025-11-14 22:23:07] IP: ::1
+User: cái giề
+Bot: Chào bạn! Tôi là trợ lý du lịch thông minh của LaValle, rất vui được đồng hàn...
+---

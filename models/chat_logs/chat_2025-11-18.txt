@@ -1,0 +1,16 @@
+[2025-11-18 06:30:56] IP: ::1
+User: helo xin chào
+Bot: Chào bạn! Tôi là trợ lý du lịch thông minh từ LaValle, rất vui được chào đón b...
+---
+[2025-11-18 06:34:27] IP: ::1
+User: helo, xin chào
+Bot: Xin chào! Tôi là trợ lý du lịch thông minh của LaValle – ứng dụng đặt phòng kh�...
+---
+[2025-11-18 06:44:00] IP: ::1
+User: Helo xin chào
+Bot: Chào bạn! Rất vui được đón tiếp bạn đến với LaValle - ứng dụng đặt phòng...
+---
+[2025-11-18 06:44:29] IP: ::1
+User: Hãy gợi ý cho tôi một số điểm đến thú vị trong mùa hè này
+Bot: Chào bạn! Tôi là trợ lý du lịch thông minh của LaValle, rất vui được giúp bạn ...
+---

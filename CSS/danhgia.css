@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Navigation Bar - Giữ nguyên từ file gốc */
+.navbar {
+    width: 100%;
+    max-width: 1728px;
+    height: 60px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0 20px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #5DCCF9, #23A6F0);
+    margin-left: clamp(20px, 15%, 283px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: clamp(20px, 10%, 163px);
+    flex: 1;
+}
+
+.nav-link {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #3D3E48;
+    text-decoration: none;
+    margin-right: clamp(20px, 4%, 61px);
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #2196F3;
+}
+
+.user-section {
+    margin-left: auto;
+    margin-right: clamp(20px, 15%, 277px);
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    margin-right: 21px;
+}
+
+.language {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3D3E48;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 80px;
+    padding: 40px 0;
+    min-height: calc(100vh - 80px);
+}
+
+.review-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Column - Hotel Information */
+.hotel-info-section {
+    padding-right: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.hotel-card-review {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #e9ecef;
+}
+
+.hotel-image-review {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.hotel-image-review img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #1dd855;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hotel-details-review {
+    padding: 0 5px;
+}
+
+.hotel-name-review {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hotel-rating-review {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.stars-review {
+    display: flex;
+    gap: 2px;
+}
+
+.stars-review i {
+    color: #FFD700;
+    font-size: 16px;
+}
+
+.stars-review .far {
+    color: #ddd;
+}
+
+.rating-score {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.hotel-price-review,
+.hotel-location-review {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.hotel-price-review i,
+.hotel-location-review i {
+    color: #2196F3;
+    width: 16px;
+}
+
+.price-text {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Right Column - Review Form */
+.review-form-section {
+    padding-left: 20px;
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Star Rating */
+.star-rating-section {
+    margin-bottom: 10px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ddd;
+    transition: color 0.2s;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #FFD700;
+}
+
+.star-rating input:checked ~ label {
+    color: #FFD700;
+}
+
+/* Form Groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-input {
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    background: white;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+.form-textarea {
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+    background: white;
+}
+
+.form-textarea:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+.character-count {
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+    margin-top: 5px;
+}
+
+/* Photo Upload */
+.photo-upload-area {
+    border: 2px dashed #e9ecef;
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    background: #fafafa;
+}
+
+.photo-upload-area:hover {
+    border-color: #2196F3;
+    background: #f0f8ff;
+}
+
+.upload-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+}
+
+.upload-placeholder i {
+    font-size: 24px;
+    color: #2196F3;
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.checkbox-input {
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+    accent-color: #2196F3;
+}
+
+.checkbox-label {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #2196F3;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: #1976D2;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .review-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 30px;
+    }
+    
+    .hotel-info-section,
+    .review-form-section {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 10px;
+    }
+    
+    .logo {
+        margin-left: 10px;
+    }
+    
+    .nav-links {
+        margin-left: 10px;
+        gap: 10px;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    
+    .user-section {
+        margin-right: 10px;
+    }
+    
+    .review-container {
+        margin: 0 10px;
+        padding: 20px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .form-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 20px 0;
+    }
+    
+    .review-container {
+        margin: 0 5px;
+        padding: 15px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+    }
+    
+    .star-rating label {
+        font-size: 20px;
+    }
+    
+    .photo-upload-area {
+        padding: 30px 15px;
+    }
+}

@@ -1,0 +1,4 @@
+[2025-11-17 06:50:47] IP: ::1
+User: Xin chào
+Bot: Chào bạn! Tôi là trợ lý du lịch thông minh của LaValle, ứng dụng đặt phòng khá...
+---

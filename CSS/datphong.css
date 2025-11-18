@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%; 
+    max-width: 1728px;
+    height: 60px;
+    background-color: #FFFFFF;
+    position: fixed; /* giữ thanh điều hướng ở trên cùng  khi cuộn */
+    top: 0;
+    left: 50%; /* căn giữa thanh điều hướng */
+    transform: translateX(-50%); /* dịch chuyển về giữa */
+    z-index: 1000; /* đảm bảo thanh điều hướng nằm trên các phần tử khác khi cuộn */
+    display: flex; /* sử dụng kiểu hiển thị linh họat để căn chỉnh các phần tử bên trong */
+    align-items: center; /* đảm bảo các phần tử bên trong được căn chỉnh theo chiều dọc */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* thêm bóng đổ nhẹ */
+    padding: 0 20px; /* thêm khoảng cách bên trái và bên phải */
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #5DCCF9, #23A6F0);
+    margin-left: clamp(20px, 15%, 283px); /* căn giữa logo với khoảng cách tối thiểu 20px và tối đa 283px */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* căn giữa nội dung bên trong logo */
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: clamp(20px, 10%, 163px); /* căn giữa các liên kết với khoảng cách tối thiểu 20px và tối đa 163px */
+    flex: 1; /* cho phép các liên kết chiếm không gian còn lại */
+}
+
+.nav-link {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #3D3E48;
+    text-decoration: none; /* loại bỏ gạch chân */
+    margin-right: clamp(20px, 4%, 61px); /* khoảng cách giữa các liên kết */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #2196F3;
+}
+
+.user-section {
+    margin-left: auto;
+    margin-right: clamp(20px, 15%, 277px);
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    margin-right: 21px;
+}
+
+.language {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3D3E48;
+}
+
+.main-container { /* chứa toàn bộ nội dung chính của trang */
+    width: 100%;
+    max-width: 1728px;
+    margin: 0 auto; /* căn giữa nội dung chính */
+    margin-top: 60px; 
+}
+.main {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+    width: 100%;
+}
+.reservation-content{
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    width: 80%;
+    margin: 5px 20px;
+}
+.reservation-detail {
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2196F3;
+    border-radius: 10px;
+}
+.reservation-detail i{
+    font-size: 16px;
+    color: #2196F3;
+}
+.reservation-user-detail {
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2196F3;
+    border-radius: 10px;
+}
+.reservation-price-detail {
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2196F3;
+    border-radius: 10px;
+}
+.reservation-total-detail {
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2196F3;
+    border-radius: 10px;
+}
+.reservation-total-detail h2{
+    margin-bottom: 10px;
+}
+.reservation-total-detail h3{
+    margin-bottom: 10px;
+}
+.star {
+    display: flex;
+    gap: 3px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.star i{
+    color: #ffd700;
+}
+.reservation-detail h2 {
+    padding-bottom: 10px;
+}
+.reservation-header{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    margin: 5px 20px;
+    border-bottom: 1px solid #2196F3;
+}
+.reservation-header h2 {
+
+    margin: 0 auto;
+}
+.reservation-header i{
+    border-radius: 100%;
+    color: #2196F3;
+    background-color: #FFFFFF;
+    border: 1px solid #2196F3;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+.reservation-header i:hover {
+    background: #2196F3;
+    color: white;
+}
+.reservation-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    
+}
+.reservation-time i {
+    font-size: 25px;
+}
+.reservation-price-detail h2{
+    margin-bottom: 10px;
+}
+.reservation-price-detail h3{
+    margin-bottom: 10px;
+}
+.total{
+    width: 100%;
+    height: 50px;
+    background-color: #5DCCF9;
+    margin-bottom: 20px ;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.reservation-total-detail hr{
+    margin-bottom: 10px;
+    
+}
+.total-room p{
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+.total-customer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.total-customer i{
+    font-size: 25px;
+}
+
+.customer-info {
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2196F3;
+    border-radius: 10px;
+}
+.customer-info h2 {
+    padding-bottom: 10px;
+}
+.form-name-input{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+.form-name-input div {
+  width: 50%; 
+}
+.customer-name {
+    width:100%;
+    height:40px;
+}
+.tel{
+    width: 50%
+}
+.telephone{
+    display: flex;
+    gap: 10px;
+    height:40px;
+    width: 100%;
+}
+.telephone select {
+  width: 20%; 
+  flex-shrink: 0;
+}
+.customer-phone {
+   width: 80%;
+}
+.customer-email{
+    width: 100%;
+    height:40px;
+}
+.form-location-input{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+.location{
+    width:50%;
+}
+.special-request {
+    width: 100%;
+    height: 60px;
+}
+.submit-button{
+    display: flex;
+    justify-content: flex-end;
+}
+.submit-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    color: #2196F3;
+    border: 1px solid #2196F3;
+    background-color: #FFFFFF;
+}
+
+.submit-btn:hover {
+    background: #2196F3;
+    color: white;
+}
+
+/* ========================================
+   NOTIFICATION SYSTEM
+   ======================================== */
+
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    pointer-events: none;
+}
+
+.notification {
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    pointer-events: auto;
+    min-width: 300px;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+}
+
+.notification-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.notification-message {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+    flex-shrink: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.notification-close:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Success Notification */
+.notification.success {
+    background-color: #d4edda;
+    border-color: #4caf50;
+    color: #155724;
+}
+
+.notification.success .notification-icon {
+    color: #4caf50;
+}
+
+.notification.success .notification-icon::before {
+    content: '✓';
+}
+
+.notification.success .notification-close {
+    color: #4caf50;
+}
+
+/* Error Notification */
+.notification.error {
+    background-color: #f8d7da;
+    border-color: #f44336;
+    color: #721c24;
+}
+
+.notification.error .notification-icon {
+    color: #f44336;
+}
+
+.notification.error .notification-icon::before {
+    content: '!';
+}
+
+.notification.error .notification-close {
+    color: #721c24;
+}
+
+/* ========================================
+   NOTIFICATION ANIMATIONS
+   ======================================== */
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/* Responsive Design for Notifications */
+@media (max-width: 768px) {
+    .notification-container {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        max-width: none;
+    }
+
+    .notification {
+        min-width: unset;
+        width: 100%;
+    }
+}
